@@ -1,5 +1,7 @@
 # mmdump
 
+![CI](https://github.com/tomyl/mmdump/actions/workflows/ci.yml/badge.svg?branch=main&event=push)
+
 `mmdump` is a simple tool for non-admins to export data from Mattermost.
 
 **Pre-alpha software**. Expect crashes, data loss, silent data corruption etc.
