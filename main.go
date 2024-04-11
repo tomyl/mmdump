@@ -14,11 +14,6 @@ import (
 	"time"
 )
 
-type pref struct {
-	Category string `json:"category"`
-	Name     string `json:"name"`
-}
-
 type user struct {
 	ID        string `json:"id"`
 	Username  string `json:"username"`
@@ -355,11 +350,9 @@ func run() error {
 			return errors.New("-dir not provided")
 		}
 		return listPosts(*dir, *doListPosts)
-	} else {
-		return errors.New("provide -dump or -channels")
 	}
 
-	return nil
+	return errors.New("provide -dump, -channels or -posts")
 }
 
 func main() {
