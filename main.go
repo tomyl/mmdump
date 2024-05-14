@@ -294,9 +294,9 @@ func listPostsBefore(dir, channelID, before string, userMap map[string]string, w
 		fmt.Fprintf(w, "%s\t%s\t%s\n", t, u, p.Message)
 	}
 
-	if before == "" {
-		// TODO: after
-	}
+	// TODO: after
+	// if before == "" {
+	// }
 
 	return nil
 }
@@ -424,9 +424,9 @@ func indexPostsBefore(dir string, batch *bleve.Batch, c channel, before string, 
 		}
 	}
 
-	if before == "" {
-		// TODO: after
-	}
+	// TODO: after
+	// if before == "" {
+	// }
 
 	return nil
 }
